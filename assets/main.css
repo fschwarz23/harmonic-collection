@@ -1,4 +1,103 @@
-body {
-background-color: red;
+body{
+    font-family: 'Martian Mono', monospace, sans-serif; 
+    font-weight: 300; 
+    letter-spacing: -0.5px;
+
+}
+
+
+h1{
+    font-weight: 300;
+    color: #F9463C;
+    letter-spacing: -2px;
+   
+}
+
+h3{
+    color:#f9463c;
+    font-size:14px;
+
+}
+
+h4{
+    color: blue;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: -2px;
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+       #cf23cf, #eedd44);
+       -webkit-text-fill-color: transparent;
+       -webkit-background-clip: text;
+       font-weight: 700;
+
+}
+
+.sml-header{
+
+    font-weight: 200; 
+    font-size: 13px;
+}
+
+
+nav{
+    padding:15px;
+    background: linear-gradient(
+    to right, #f32170, #ff6b08,
+   #cf23cf, #eedd44);
+   letter-spacing: -1px;
+   font-size: 11px;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+
+}
+
+
+p{
+
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+
+
+.ascii-camera{
+    width: min-content;
+    overscroll-behavior-y: none;
+    white-space: pre;
+    font-size: 15px;
+    margin: 0px auto;
+    user-select: none;
+    background: linear-gradient(
+          to right, #f32170, #ff6b08,
+         #cf23cf, #eedd44); 
+         -webkit-text-fill-color: transparent;
+         -webkit-background-clip: text;
+
+}
+
+ul.fav-spots{
+    color:#f9463c;
+    font-size:12px;
+    line-height: 22px;
+}
+
+.footer-bg{
+    background: linear-gradient(
+  to right, #f32170, #ff6b08,
+ #cf23cf, #eedd44);
+}
+
+.footer-txt{
+    color: white;
+    font-size: 10px;
+    padding: 20px;
 
 }
