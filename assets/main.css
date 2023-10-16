@@ -140,5 +140,20 @@ blockquote{
     font-weight: 500;
     width: 560px;
     margin-top: 25px;
-
 }
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+  }
+
+  section{
+    display: flex;
+    /*puts items in a column layout*/
+    /*flex-direction: column;*/
+
+    /*fix breaking out of their container*/
+
+  }
+  
