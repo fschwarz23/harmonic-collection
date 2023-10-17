@@ -7,12 +7,17 @@ body{
     padding: 0px 60px;
 }
 
+header{
+
+    text-align: center;
+}
 
 h1{
     font-weight: 300;
     color: #F9463C;
     letter-spacing: -2px;
     padding: 20px 0 36px 0;
+    
    
 }
 
@@ -21,6 +26,7 @@ h1 a{
     color: #F9463C;
     letter-spacing: -2px;
     text-decoration: none;
+    
     
    
 }
@@ -50,7 +56,7 @@ h4{
     font-weight: 200; 
     font-size: 13px;
     display: block;
-    margin: 18px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 
@@ -126,11 +132,45 @@ ul.fav-spots{
     display: block;
 
 
+} 
+
+.header_img{
+    background-image: url("../assets/images/peru_headerbg.JPG");
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.header_img3{
+    background-image: url("../assets/images/guatemala_headerbg.JPG");
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -55px;
+}
+
 
 img{
 
     margin-top: 40px;
+}
+
+img_container{
+    position: relative;
+}
+
+.img_overlay{
+
+    position: absolute;
+    width: 500px;
+    top: 820px;
+    left: 860px;
+    filter: drop-shadow(20px 20px 10px rgba(185, 185, 185, 0.947));
+    
+    
+
 }
 
 blockquote{
@@ -156,4 +196,17 @@ article {
     /*fix breaking out of their container*/
 
   }
+
+
+  section.index{
+    display: block;
+    text-align: center;
+
+  }
+
   
+  section.index p{
+    font-size: 12px;
+    text-align: center;
+     
+  }
