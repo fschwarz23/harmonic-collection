@@ -168,8 +168,8 @@ img{
 
     position: absolute;
     width: 500px;
-    top: 820px;
-    left: 860px;
+    top: -20px;
+    left: 480px;
     filter: drop-shadow(20px 20px 10px rgba(185, 185, 185, 0.947));
 }
 
