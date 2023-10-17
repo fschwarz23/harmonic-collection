@@ -155,6 +155,24 @@ ul.fav-spots{
 }
 
 
+.header_img4{
+    background-image: url("../assets/images/santorini-greece-postcard.JPG");
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -55px;
+}
+
+.header_img5{
+    background-image: url("../assets/images/amsterdam-postcard.JPG");
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+}
+
 img{
 
     margin-top: 40px;
@@ -363,5 +381,176 @@ section.acatenangovolcano img.floatr{
 }
 section.acatenangovolcano{
     clear: both;
+}
+
+
+/*entry 4 Greece*/
+section.greece{
+    background-image: url("../assets/images/PXL_20230420_164547376.JPG");
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -55px;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-item {
+    width: calc(33.33% - 10px);
+    margin: 5px;
+    overflow: hidden;
+}
+
+.img-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+#map {
+    width: 800px;
+    height: 600px;
+    background-image: url('../assets/images/santorini-map.png'); 
+    background-size: cover;
+    position: relative;
+}
+
+/* Add custom markers for landmarks */
+.landmark {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* CSS for the tooltip */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+}
+
+/*Amsterdam*/
+
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+ 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+    }
+  }
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  //filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+  &::before {
+    content: "";
+	  display: block;
+    padding-top: 56.25%; // 16:9 aspect ratio
+  }
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; // 3:2 aspect ratio
+    }
+  }
+}
+
+.card__image--flowers {
+  background-image: url(../assets/images/amsterdam-flowers.jpg);
+}
+
+.card__image--nightlife {
+  background-image: url(../assets/images/amsterdam-nightlife.jpg);
+}
+
+.card__image--biking {
+  background-image: url(../assets/images/bikingamsterdam.jpg);
+}
+.card__image--windmill {
+  background-image: url(../assets/images/amsterdam-windmills.jpg);
+}
+
+.card__title {
+  color: gray-dark;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
 }
 
