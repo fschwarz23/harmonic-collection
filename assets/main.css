@@ -8,9 +8,13 @@ body{
 }
 
 header{
-
     text-align: center;
 }
+
+/*
+section.head{
+    position: fixed;
+}*/
 
 h1{
     font-weight: 300;
@@ -25,16 +29,17 @@ h1 a{
     font-weight: 300;
     color: #F9463C;
     letter-spacing: -2px;
-    text-decoration: none;
-    
-    
-   
+    text-decoration: none;   
 }
 
 h3{
     color:#f9463c;
     font-size:14px;
 
+}
+
+h4.guat{
+    color: black !important;
 }
 
 h4{
@@ -48,11 +53,10 @@ h4{
        -webkit-text-fill-color: transparent;
        -webkit-background-clip: text;
        font-weight: 700;
-
 }
 
-.sml-header{
 
+.sml-header{
     font-weight: 200; 
     font-size: 13px;
     display: block;
@@ -83,7 +87,6 @@ nav a{
 }
 
 p{
-
     font-weight: 200;
     font-size: 20px;
     line-height: 30px;
@@ -157,7 +160,7 @@ img{
     margin-top: 40px;
 }
 
-img_container{
+.img_container{
     position: relative;
 }
 
@@ -168,9 +171,6 @@ img_container{
     top: 820px;
     left: 860px;
     filter: drop-shadow(20px 20px 10px rgba(185, 185, 185, 0.947));
-    
-    
-
 }
 
 blockquote{
@@ -188,25 +188,180 @@ article {
     background: aqua;
   }
 
-  section{
-    display: flex;
+  /*section{
+    display: flex;}
+
     /*puts items in a column layout*/
     /*flex-direction: column;*/
 
     /*fix breaking out of their container*/
-
-  }
-
-
-  section.index{
+  
+ /* section.index{
     display: block;
     text-align: center;
-
   }
 
-  
   section.index p{
     font-size: 12px;
-    text-align: center;
-     
+    text-align: center;  
   }
+
+  */
+
+
+  /* GUATEMALA*/
+section.antigua{
+    background-color: #FAECAF;
+    padding: 55px;
+    border: thick double #668095;
+    overflow: hidden;
+    height: 700px;
+}
+
+section.antigua img{
+    border-style: dashed;
+    border-bottom-right-radius: 25px;
+	border-top-left-radius: 25px;
+    border-color: #455797;
+    border-width: 2px;
+}
+
+section.antigua .img-overlay{
+    position: relative;
+    top: -600px;
+    left: 650px;
+    width: 300px;
+    opacity: 0.85;
+
+}
+section.antigua blockquote{
+    border-radius: 50%;
+    border-style: solid;
+    padding: 15px 20px 15px 20px;
+    margin: 0;
+    position: absolute;
+    top: 1270px;
+}
+ 
+section.antigua p.floatl{
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    padding: 10px;
+}
+
+section.antigua img.floatr{
+     margin-left: 20px;
+    
+}
+section.antigua{
+    clear: both;
+}
+
+
+/* lake atitlan section*/
+
+section.lakeatitlan{
+    background-color: #f8d1bb;
+    padding: 55px;
+    border: thick double #668095;
+    margin-top: 30px;
+  
+}
+
+
+section.lakeatitlan img{
+    border-style: dashed;
+    border-bottom-right-radius: 25px;
+	border-top-left-radius: 25px;
+    border-color: #455797;
+    border-width: 2px;
+}
+
+section.lakeatitlan .img-overlay{
+    position: relative;
+    top: -600px;
+    left: 650px;
+    width: 300px;
+    opacity: 0.85;
+
+}
+section.lakeatitlan blockquote{
+    border-radius: 50%;
+    border-style: solid;
+    padding: 15px 20px 15px 20px;
+    margin: 0;
+    position: absolute;
+    top: 1550px;
+    left: 780px;
+     
+}
+
+section.lakeatitlan p.floatl{
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    padding: 10px;
+}
+
+section.lakeatitlan img.floatr{
+     margin-left: 20px;
+    
+}
+section.lakeatitlan{
+    clear: both;
+}
+
+/* Acatenango volcano section*/
+
+section.acatenangovolcano{
+    background-color: #eec8ec;
+    padding: 55px 55px 50px 55px;
+    border: thick double #668095;
+    margin-top: 30px;
+  
+}
+
+
+section.acatenangovolcano img{
+    border-style: dashed;
+    border-bottom-right-radius: 25px;
+	border-top-left-radius: 25px;
+    border-color: #455797;
+    border-width: 2px;
+}
+
+section.acatenangovolcano .img-overlay{
+    position: relative;
+    top: -600px;
+    left: 650px;
+    width: 300px;
+    opacity: 0.85;
+
+}
+section.acatenangovolcano blockquote{
+    border-radius: 50%;
+    border-style: solid;
+    padding: 15px 20px 15px 20px;
+    margin: 0;
+    position: absolute;
+    top: 2550px;
+    left: 780px;
+     
+}
+
+section.acatenangovolcano p.floatl{
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    padding: 10px;
+}
+
+section.acatenangovolcano img.floatr{
+     margin-left: 20px;
+    
+}
+section.acatenangovolcano{
+    clear: both;
+}
+
