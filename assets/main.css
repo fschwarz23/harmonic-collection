@@ -554,3 +554,74 @@ img {
   margin-bottom: 1.25rem;
 }
 
+
+/* St Lucia */
+
+.stlucia{
+
+
+}
+
+
+
+
+
+
+
+.header_img6{
+    background-image: url("../assets/images/stlucia-postcard1.JPG");
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -55px;
+}
+
+.circle {
+    
+    border:1px solid red;    
+    height:900px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:900px;
+    margin: auto;
+}
+
+.stlucia-flag{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/stlucia-flag.png");
+    background-repeat: space repeat;
+    background-size: 15%;
+    opacity: 0.5;
+    z-index: -1;
+    margin-top: 100px;  
+}
+
+
+
+
+
+
+
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.parallax-layer img {
+    width: 100%;
+}
