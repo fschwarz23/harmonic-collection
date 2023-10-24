@@ -1,0 +1,48 @@
+.wrapper{
+    padding: 1em;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr min(65ch, 100%) 1fr;
+
+}
+
+.wrapper > * {
+
+    grid-column: 2;
+}
+
+.full{
+
+    width: 100%;
+    grid-column: 1 / 4;
+}
+
+img{
+    max-height: 100%;
+}
+
+
+main{
+    display: flex;
+    background-color: lightgreen;
+}
+
+nav{
+    flex-grow: 200px;
+}
+
+
+article{
+    flex-grow: 6;
+}
+
+aside{
+
+
+}
+
+
+
+transform within container div
+
+h1 - center - 

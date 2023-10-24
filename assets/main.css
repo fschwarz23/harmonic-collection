@@ -138,7 +138,7 @@ ul.fav-spots{
 } 
 
 .header_img{
-    background-image: url("../assets/images/peru_headerbg.JPG");
+    background-image: url("../assets/images/peru_headerbg.jpg");
     height: 280px;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,7 +146,7 @@ ul.fav-spots{
 }
 
 .header_img3{
-    background-image: url("../assets/images/guatemala_headerbg.JPG");
+    background-image: url("../assets/images/guatemala_headerbg.jpg");
     height: 280px;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,7 +156,7 @@ ul.fav-spots{
 
 
 .header_img4{
-    background-image: url("../assets/images/santorini-greece-postcard.JPG");
+    background-image: url("../assets/images/santorini-greece-postcard.jpg");
     height: 280px;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,7 +165,7 @@ ul.fav-spots{
 }
 
 .header_img5{
-    background-image: url("../assets/images/amsterdam-postcard.JPG");
+    background-image: url("../assets/images/amsterdam-postcard.jpg");
     height: 280px;
     background-position: center;
     background-repeat: no-repeat;
@@ -562,11 +562,18 @@ img {
 
 }
 
+h4.stlucia{
+    position: absolute;
+    top: 800px;
+   left: 500px !important;
+}
 
 
-
-
-
+h4.stlucia2{
+    position: absolute;
+    top: 700px;
+   left: 900px !important; 
+}
 
 .header_img6{
     background-image: url("../assets/images/stlucia-postcard1.JPG");
@@ -605,14 +612,12 @@ img {
 
 
 
-
-
-
 .parallax-container {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    z-index: -3;
 }
 
 .parallax-layer {
