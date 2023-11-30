@@ -1,0 +1,66 @@
+/* nav menu */
+
+
+
+
+
+/* grid container */
+.hg-grid {
+    display:grid;
+    grid-template-areas:
+        'header'
+        'main-content'
+        'left-sidebar'
+        'right-sidebar'
+        'footer';
+}
+
+/* general column padding */
+.hg-grid > * {
+    padding:1rem;
+}
+
+/* assign columns to grid areas */
+.hg-grid > .header {
+    grid-area:header;
+    background:#f97171;
+}
+.hg-grid > .main-content {
+    grid-area:main-content;
+    background:#fff;
+}
+.hg-grid > .left-sidebar {
+    grid-area:left-sidebar;
+    background:#f5d55f;
+}
+.hg-grid > .right-sidebar {
+    grid-area:right-sidebar;
+    background:#c5ed77;
+}
+.hg-grid > .footer {
+    grid-area:footer;
+    background:#72c2f1;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .hg-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'header header'
+            'main-content main-content'
+            'left-sidebar right-sidebar'
+            'footer footer';
+    }
+}
+
+/* desktop breakpoint */
+@media (min-width:1024px) {
+    .hg-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            'header header header header'
+            'left-sidebar main-content main-content right-sidebar'
+            'footer footer footer footer';
+    }
+}
