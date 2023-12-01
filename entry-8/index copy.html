@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+  <title>Harmonic Collection Entry 8</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@900&display=swap"
+    rel="stylesheet">
+
+  <!--css-->
+  <link href="../assets/entry8.css" rel="stylesheet">
+  <link href="https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css" rel="stylesheet">
+
+
+  <!--scripts for js color scroll effect-->
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  
+</head>
+
+<body>
+  <header>
+    <h6><a href="../index.html">WanderLens</a> <span class="sml-header">{Travel Photo Blog}</span></h6>
+  </header>
+
+  <section class="top-nav">
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="../entry-1/index.html">Morocco</a></li>
+      <li><a href="../entry-2/index.html">Peru</a></li>
+      <li><a href="../entry-3/index.html">Guatemala</a></li>
+      <li><a href="../entry-4/index.html">Greece</a></li>
+      <li><a href="../entry-5/index.html">Amsterdam</a></li>
+      <li><a href="../entry-6/index.html">St Lucia</a></li>
+      <li><a href="../entry-7/index.html">Turks and Caicos</a></li>
+      <li><a href="../entry-8/index.html">India</a></li>
+      <li><a href="../entry-9/index.html">PR</a></li>
+      <li><a href="../entry-10/index.html">New Mexico</a></li>
+    </ul>
+  </section>
+
+  <div class="header_img"></div>
+
+<!--color change parllax effect body-->
+<div class="container">
+  <h6>Exploring <sup><b>India</b></sup></h6>
+
+  <section data-bgcolor="#bcb8ad" data-textcolor="#f4806b">
+    <h1 data-scroll data-scroll-speed="3">"India is a vast symphony of colors, where the hues of tradition and modernity dance together, creating a canvas that captures the spirit of a nation pulsating with diversity." - Amitabh Bachchan</h1>
+    <img src="../assets/images/India1.jpg" alt="">
+  </section>
+  <section data-bgcolor="#eacbd1" data-textcolor="#536fae"><img src="../assets/images/India2.jpg" alt="">
+    <h2 data-scroll data-scroll-speed="1">Taj Mahal & Agra Fort ****</h2><p>The Taj Mahal and Agra Fort, UNESCO World Heritage Sites in India, embody rich history and architecture. The Taj Mahal, a white marble mausoleum, symbolizes love, built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. Agra Fort, a red sandstone fortress by Emperor Akbar, served as the main residence for Mughal emperors. Together, they epitomize India's cultural heritage and imperial legacy.</p>
+  </section>
+
+  <section data-bgcolor="#536fae" data-textcolor="#eacbd1"><img src="../assets/images/India3.jpg" alt=""><img src="../assets/images/India4.jpg" alt="">
+    <h2 data-scroll data-scroll-speed="1">Delhi ****</h2><p>
+      Delhi, the vibrant capital of India, is a city that encapsulates a rich blend of history, culture, and modernity. Amidst its bustling streets and historic landmarks, there exists a unique initiative known as the "School Under the Bridge." This heartwarming project brings education to underprivileged children. I spent some time volunteering at the school as an English tutor. The school not only imparts academic knowledge but also fosters a sense of hope and community, making a profound impact on the lives of these children.
+    </p>
+  </section>
+  <section data-bgcolor="#e3857a" data-textcolor="#f1dba7"><img src="../assets/images/India5.jpg" alt=""><img src="../assets/images/India8.jpg" alt="">
+    <h2 data-scroll data-scroll-speed="1">Amritsar ****</h2><p>Amritsar, a city in the northwestern Indian state of Punjab, is steeped in historical and cultural significance. The iconic Golden Temple, also known as Harmandir Sahib, stands as the spiritual heart of Sikhism and attracts pilgrims and visitors from around the world.  Amritsar is also renowned for its vibrant street life, delectable Punjabi cuisine, and the lively bazaars around the temple, offering a sensory delight for those exploring its streets.</p>
+  </section>
+
+  <section data-bgcolor="#eacbd1" data-textcolor="#536fae"><img src="../assets/images/India6.jpg" alt=""><img src="../assets/images/India7.jpg" alt="">
+    <h2 data-scroll data-scroll-speed="1">Dharmshala ****</h2><p>Dharamshala, nestled in the picturesque Kangra Valley of Himachal Pradesh, is a serene hill station that captivates visitors with its stunning landscapes and spiritual aura. It serves as the residence of the exiled Tibetan spiritual leader, the Dalai Lama, adding a distinctive Tibetan influence to the town. The upper region, McLeod Ganj, is a cultural hub with monasteries, vibrant markets, and trekking opportunities, while the lower part, Dharamshala, offers a tranquil escape with lush greenery and a more laid-back atmosphere.</p>
+  </section>
+</div>
+
+
+<!--
+<p class="favspots">
+  <h3><em>My favorite spots:</em></h3>
+  <ul class="fav-spots">
+  <li>Fira to Oia Hike</li>
+  <li>Kamari Beach</li>
+  <li>Wine Tour</li>
+  </ul>
+</p>-->
+
+
+<footer>
+<div class="footer-bg">
+  <span class="footer-txt">&copy;Faye Schwarz /2023</span>
+  <br><br>
+</div>
+</footer>
+
+<!--scroll color change js code-->
+<script>
+
+  gsap.registerPlugin(ScrollTrigger);
+  
+  /* SMOOTH SCROLL */
+  const scroller = new LocomotiveScroll({
+    el: document.querySelector(".container"),
+    smooth: true
+  });
+  
+  scroller.on("scroll", ScrollTrigger.update);
+  
+  ScrollTrigger.scrollerProxy(".container", {
+    scrollTop(value) {
+      return arguments.length
+        ? scroller.scrollTo(value, 0, 0)
+        : scroller.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+      return {
+        left: 0,
+        top: 0,
+        width: window.innerWidth,
+        height: window.innerHeight
+      };
+    }
+  });
+  
+  ScrollTrigger.addEventListener("refresh", () => scroller.update());
+  
+  ScrollTrigger.refresh();
+  
+  /* COLOR CHANGER */
+  window.addEventListener("load", function () {
+    const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
+    scrollColorElems.forEach((colorSection, i) => {
+      const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
+      const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
+  
+      ScrollTrigger.create({
+        trigger: colorSection,
+        scroller: ".container",
+        start: "top 50%",
+        onEnter: () =>
+          gsap.to("body", {
+            backgroundColor: colorSection.dataset.bgcolor,
+            color: colorSection.dataset.textcolor,
+            overwrite: "auto"
+          }),
+        onLeaveBack: () =>
+          gsap.to("body", {
+            backgroundColor: prevBg,
+            color: prevText,
+            overwrite: "auto"
+          })
+      });
+    });
+  });
+  
+       </script>
+
+
+</body>
+</html>
