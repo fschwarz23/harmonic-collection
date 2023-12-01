@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <meta name="description" content="A brief description of your webpage">
+    <meta name="keywords" content="keywords, separated, by, commas">
+    <meta name="author" content="Your Name">
+
+    <!-- Add your stylesheets, scripts, or other head-related elements here -->
+ <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script src="color.js"></script>
+
+
+  
+  <link href="https://use.typekit.net/skn8ash.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" rel="stylesheet">
+    <link href="testing.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+      <section data-bgcolor="#bcb8ad" data-textcolor="#032f35">
+        <h1 data-scroll data-scroll-speed="3">Change background colour with GSAP ScrollTrigger</h1>
+        <img src="https://images.pexels.com/photos/3062948/pexels-photo-3062948.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+      </section>
+      <section data-bgcolor="#eacbd1" data-textcolor="#536fae"><img src="https://images.pexels.com/photos/4467879/pexels-photo-4467879.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <h2 data-scroll data-scroll-speed="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+      </section>
+  
+      <section data-bgcolor="#536fae" data-textcolor="#eacbd1"><img src="https://images.pexels.com/photos/5604966/pexels-photo-5604966.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <h2 data-scroll data-scroll-speed="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+      </section>
+      <section data-bgcolor="#e3857a" data-textcolor="#f1dba7"><img src="https://images.pexels.com/photos/4791474/pexels-photo-4791474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <h2 data-scroll data-scroll-speed="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+      </section>
+    </div>
+  
+   
+
+
+
+     <!-- Include your JavaScript code -->
+     <script>
+
+gsap.registerPlugin(ScrollTrigger);
+
+/* SMOOTH SCROLL */
+const scroller = new LocomotiveScroll({
+  el: document.querySelector(".container"),
+  smooth: true
+});
+
+scroller.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy(".container", {
+  scrollTop(value) {
+    return arguments.length
+      ? scroller.scrollTo(value, 0, 0)
+      : scroller.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {
+      left: 0,
+      top: 0,
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  }
+});
+
+ScrollTrigger.addEventListener("refresh", () => scroller.update());
+
+ScrollTrigger.refresh();
+
+/* COLOR CHANGER */
+window.addEventListener("load", function () {
+  const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
+  scrollColorElems.forEach((colorSection, i) => {
+    const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
+    const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
+
+    ScrollTrigger.create({
+      trigger: colorSection,
+      scroller: ".container",
+      start: "top 50%",
+      onEnter: () =>
+        gsap.to("body", {
+          backgroundColor: colorSection.dataset.bgcolor,
+          color: colorSection.dataset.textcolor,
+          overwrite: "auto"
+        }),
+      onLeaveBack: () =>
+        gsap.to("body", {
+          backgroundColor: prevBg,
+          color: prevText,
+          overwrite: "auto"
+        })
+    });
+  });
+});
+
+     </script>
+     
+  </body>
+  </html>

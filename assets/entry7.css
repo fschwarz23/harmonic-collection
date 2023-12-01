@@ -199,61 +199,6 @@ h4{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-nav{
-    padding:15px;
-    background: linear-gradient(
-   to right, #f66c62, #f994c0, #ff6b08,
-   #f994c0);
-   letter-spacing: -1px;
-   font-size: 11px;
-}
-
-
-nav a{
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-
-}
-
-.nav a:hover{
-    opacity: 0.5;
-
-}
-
-
-
-
-
 .header_img{
     background-image: url("../assets/images/tc-postcard.jpg");
     height: 280px;
